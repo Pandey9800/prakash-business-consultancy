@@ -6,12 +6,12 @@ A plain HTML/CSS/JS website. No build step, no installs.
 Open `index.html` in a browser (double-click works). All links point to explicit `index.html` files, so it also works straight from disk.
 
 ## Files
-- `index.html`, `about/index.html`, `approach/index.html`, `services/index.html`, `contact/index.html`
+- `index.html`, `about/index.html`, `sss/index.html`, `programs/index.html`, `approach/index.html`, `services/index.html`, `contact/index.html`
 - `assets/css/style.css` - colours and fonts are variables at the top
 - `assets/js/main.js` - menu, scroll animations, form validation
 
 ## Edit content
-Open any page's HTML file and change the text. Service names are in `index.html` and `services/index.html` (search for "Enquire"). The contact form dropdown is in `contact/index.html`. To hide the "WEBSITE CONCEPT DEMO" pill, delete the `<div class="demo-pill">` line in each page.
+Open any page's HTML file and change the text. The navigation and footer are repeated in every HTML file, so a menu change must be made in each one. The contact form dropdown is in `contact/index.html`. To hide the "WEBSITE CONCEPT DEMO" pill, delete the `<div class="demo-pill">` line in each page.
 
 ## Publish on GitHub Pages
 1. Create a repository and push this folder to the `main` branch.

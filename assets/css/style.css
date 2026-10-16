@@ -229,3 +229,17 @@ textarea{min-height:9rem;resize:vertical}
 .theme-btn .ti{width:14px;height:14px;border-radius:50%;border:1.5px solid currentColor;background:linear-gradient(90deg,currentColor 50%,transparent 50%)}
 :root[data-theme="dark"]{--ivory:#0F1A16;--cream:#16241F;--green:#EAE3D0;--ink:#C9C5B8;--gold-ink:#C9AE78;--white:#1B2A25;--dark:#08100D;--btnhover:#FFFFFF;--hdr:rgba(15,26,22,.92);--rowhover:rgba(35,52,45,.6);--line:rgba(234,227,208,.3);color-scheme:dark}
 :root[data-theme="dark"] .portrait .mono{color:#B79A63}
+
+/* SSS update: hero headline fits the longer line */
+.hero-title{font-size:clamp(2.5rem,5.2vw,4.7rem)}
+.nav a,.nav .btn,.theme-btn,.brand small{white-space:nowrap}
+/* SSS update: the longer nav switches to the existing mobile menu up to 980px wide */
+@media (min-width:901px) and (max-width:980px){
+ .menu-btn{display:inline-block;position:relative;z-index:10}
+ .nav{position:fixed;inset:0;background:var(--ivory);flex-direction:column;justify-content:center;gap:1.6rem;opacity:0;visibility:hidden;transition:opacity .4s,visibility .4s;z-index:5}
+ .nav.open{opacity:1;visibility:visible}
+ .nav a:not(.btn){font:500 2rem var(--serif)}
+ .brand{position:relative;z-index:10}
+}
+@media (min-width:981px) and (max-width:1120px){.nav{gap:1.1rem}.nav a:not(.btn){font-size:.84rem}.bar{gap:1rem}.theme-btn{padding:.45rem .7rem}.btn.sm{padding:.6rem 1rem}}
+.hero .launch-line .label{display:inline;margin:0}
